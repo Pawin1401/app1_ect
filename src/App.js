@@ -1,9 +1,9 @@
-import { Header } from "./func-components";
+import { Content, Footer, Header } from "./func-components";
 
 
 function App() {
   return (
-   [<Header/>]
+   [<Header/>,<Content/>,<Footer/>]
   )
 }
 export default App;
