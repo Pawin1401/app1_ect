@@ -1,15 +1,6 @@
-import Calender from "./class-components";
-import { Content, Footer, Header } from "./func-components";
 import React from 'react'
+import RefsArray from './refs-array'
 
-function App() {
-  return (
-   <>
-    <Header/>
-    <p><center><Calender/></center></p>
-    <Content/>
-    <Footer/>
-   </>
-  )
+export default function App(){
+  return <RefsArray/>
 }
-export default App;
