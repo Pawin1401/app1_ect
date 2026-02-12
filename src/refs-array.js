@@ -1,9 +1,9 @@
 import React from "react";
- 
+
 export default function RefsArray() {
     const table = React.useRef()
     const tr = React.useRef([])
- 
+
     const data = [
         ['JavaScript', 100],
         ['React', 150],
@@ -11,22 +11,22 @@ export default function RefsArray() {
         ['Node.js', 200],
         ['VS Code', 120],
     ]
- 
+
     const onClickkButton = (i) => {
         const index = tr.current[i].rowIndex
         table.current.deleteRow(index)
     }
- 
+
     const onMouseOverRow = (i) => {
         tr.current[i].style.backgroundColor = 'yellow'
     }
- 
+
     const onMouseOutRow = (i) => {
         tr.current[i].style.backgroundColor = 'white'
     }
- 
+
     const tableStyles = {margin: 'auto', marginTop:30}
- 
+
     return (
         <table ref={table} border='1' cellPadding={5} style={tableStyles}>
             <tr><th>Product</th><th>Price</th><th>Delete</th></tr>
